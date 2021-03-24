@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Металл Град</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header p-3 mb-2">
+    <div class="container-lg bg">
+      <div class="row d-flex">
+        <div class="col-lg-3 header-logo">
+          <a class="navbar-brand" href="#!"><img src="img/svg/header-logo.svg" alt=""></a>
+        </div>
+        <div class="col-lg-4">
+          <form class="d-flex">
+            <div class="input-group form-input">
+              <input type="text" class="form-control form-search" placeholder="Пошук" aria-label="search"
+                aria-describedby="basic-addon1">
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 user-menu">
+          <a href="#!" class="basket-link"> <sup>22</sup> КОШИК</a>
+          <a href="#!" class="user-cabinet">ВХИД</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="container-lg bg">
+      <div class="row">
+        <div class="col-lg-3 ">
+          <ul class="nav-menu">
+            <li class="nav-menu__list"><a href="#!" class="nav-menu__link">Каталог</a></li>
+            <li class="nav-menu__list"><a href="#!" class="nav-menu__link">Знижки</a></li>
+            <li class="nav-menu__list"><a href="#!" class="nav-menu__link">Доставка</a></li>
+            <li class="nav-menu__list"><a href="#!" class="nav-menu__link">Контакты</a></li>
+            <li class="nav-menu__list"><a href="#!" class="nav-menu__link">Новини</a></li>
+          </ul>
+          <a href="#!">
+            <div class="content-bunner">
+              <p class="content-bunner__text">Стань членом клубу!</p>
+            </div>
+          </a>
+
+          <div class="content-contacts">
+            <div class="content-contacts__gmail">
+              <a href="mailto:rainshouseua@gmail.com">rainshouseua@gmail.com</a>
+            </div>
+            <div class="content-contacts__social d-flex">
+              <a href="#!" class="content-contacts__facebook">
+                <svg class="facebook social-logo" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11 20">
+                  <image id="facebook"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAYAAABbLMdoAAAAoklEQVQoke2QMQrCQBREH0GQNJLOxlzAKtfIbWzt0tt5BvEUKXOIlEFJKyJoYZHIwgqTz4Zon4GB+X9n989+AkiBE3ADes8nsLXWNXAVkzKLjHkPbELjHBamzkV3wAGofX2xl18ytrSHNkYsup0yK/pQ5h2QBMwZUHjt1nh0ohlZlbKaiqFo/jY7rHzmxIw+S3/5/eBj5LU3cNfGrzFm8xDAB/OZKbQGgV3wAAAAAElFTkSuQmCC" />
+                </svg>
+              </a>
+
+
+              <a href="#!" class="content-contacts__inst">
+                <svg class="instagram social-logo" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
+                  <image id="instagram_2_" data-name="instagram (2)"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABo0lEQVQ4jZ2VzSuEURTGf0Y+y1epmfEVkSR2svcf8KfYUZSNj4gFWSkbLGVjgR1C0shCyk4NGQqjFEKvTp073a73voynZt73no9n5p7z3HOxUAuMASfAAxD88nkCToEJIGloCvTZA2wCcV2/A3dK6IPElqovC/QDu7KoBjKavAp0RpC4aAEWNFdIG8U/pIa1PIgEvcA4kLBI58Sxr4tuT2IMaAKagULLntK8Wa2hvF+I4wb4dIIFRcCIVctAmyVNKAMGlaBP4yXuzRQ0G0K2pSQfwCGwp80KdF3u5FyaJoYRDqvzHGiz7A3AsfpmnJwzQ/gFpB1nWu3tITWtB16BZ6A4jFC+rixHXG2pEDKDHY3pcAljEUn/RhCy5euILddZWy4J+4fiqHCSFlV/605TpH4beuSWtOs/4JPNtiWbAz2nRjZHUbK59QhbOjgK3FvCfgSmVNguMlqK3NHr8jTBd/RsJCzd5kS84gn+C2QoCMe0xNrjaxlozYNIxtW85srATfoG7IsOAgPTtCprKNcAlfouZANmwBrkewXIj8gVMJm7AoBvNQaQu+7sGdIAAAAASUVORK5CYII=" />
+                </svg>
+              </a>
+
+              <a href="#!" class="content-contacts__telegram">
+                <svg class="telegram social-logo" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 18">
+                  <image id="telegram"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAABOklEQVQ4ja3TO0sdQRjG8Z8aUTGIiAGLU6YRrISgnWAhVvodhCAi2JkmfoOApYJd0kcQBD+AhXgBG0ULqyMEbZUjQiJHxszCsOzZ9fbAy87uPvznvcy0eT99wYe30oawjDM08fc1kE7MYisCmklcvwQ0jB+4SgC3uEzet6sgffiKvVwmITYxj7vk20oRJAxqAj/RKADVMYM5POT+TaWgGr7jogAS4h9W8TFmUuTpD6BJ7BTslsYhRtGBtRae8yyzegnoBksR1I3fJd5fGbAL01jHn1zTa9ETStktgYVYbDWQsVxzA/SkAtaMN6VSn3LnrFXcxwOvvYI4nJRdpuPs2lUBB5N1o8R3kC2qgAPxGXr4GQuxvLz2n1HFk77hKPYy0whOc70Mmz1Lwdhb4OzBRoSFob2bxmPG/4VHLQSDdOzTfOMAAAAASUVORK5CYII=" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="content-product col-lg-9">
+          <p class="content-product__nav-page">
+            <a href="#!"><span>Каталог →</span></a> <a href="#!"><span>Електронні →</span></a> <span>Книги</span>
+          </p>
+          <div class="content-product__slider d-flex">
+            <div class="content-product__slider-pic">
+              <img src="img/slider-pic.png" alt="">
+            </div>
+
+            <div class="content-product__info">
+              <h3 class="content-product__slider-title">комікс</h3>
+              <p class="content-product__info-subtitle">Острів Од: <br> Ловець Тарілок</p>
+              <p class="content-product__info-text">Первый эпизод легендарной фантастической <br> серии, основавшей
+                комикс-индустрию <br> в современной Украине.</p>
+              <a href="#!" class="content-product__info-more">дізнатися більше</a>
+            </div>
+          </div>
+
+          <div class="product-book d-flex">
+            <p class="product-book__text">Друкованi</p>
+            <a href="#!" class="product-book__more">більше</a>
+          </div>
+
+          <div class="product-book__wrapper">
+            <div class="product-book__box">
+              <img src="img/product-one.jpg" alt="" class="product-book__box-pic">
+              <a href="#!">
+                <h3 class="product-book__box-title">Націократія</h3>
+              </a>
+              <a href="#!">
+                <p class="product-book__box-genre">Книга</p>
+              </a>
+              <div class="product-book__price">
+                <p class="product-book__price-persent">-20%</p>
+                <p class="product-book__price-old">200 ₴</p>
+                <p class="product-book__price-new">160 ₴</p>
+              </div>
+            </div>
+
+            <div class="product-book__box">
+              <img src="img/product-two.jpg" alt="" class="product-book__box-pic">
+              <a href="#!">
+                <h3 class="product-book__box-title">Остров Од</h3>
+              </a>
+              <a href="#!">
+                <p class="product-book__box-genre">комікс</p>
+              </a>
+              <div class="product-book__price">
+                <p class="product-book__price-persent" style="display: none;"></p>
+                <p class="product-book__price-old" style="display: none;"></p>
+                <p class="product-book__price-new">200 ₴</p>
+              </div>
+            </div>
+
+            <div class="product-book__box">
+              <img src="img/product-three.jpg" alt="" class="product-book__box-pic">
+              <a href="#!">
+                <h3 class="product-book__box-title">Nіж</h3>
+              </a>
+              <a href="#!">
+                <p class="product-book__box-genre">Книга</p>
+              </a>
+              <div class="product-book__price">
+                <p class="product-book__price-persent" style="display: none;"></p>
+                <p class="product-book__price-old" style="display: none;"></p>
+                <p class="product-book__price-new">50 ₴</p>
+              </div>
+            </div>
+
+            <div class="product-book__box">
+              <img src="img/product-four.jpg" alt="" class="product-book__box-pic">
+              <a href="#!">
+                <h3 class="product-book__box-title">Крук</h3>
+              </a>
+              <a href="#!">
+                <p class="product-book__box-genre">Книга</p>
+              </a>
+              <div class="product-book__price">
+                <p class="product-book__price-persent" style="display: none;"></p>
+                <p class="product-book__price-old" style="display: none;"></p>
+                <p class="product-book__price-new">10 ₴</p>
+              </div>
+            </div>
+
+            <div class="product-book__box">
+              <img src="img/product-one.jpg" alt="" class="product-book__box-pic">
+              <a href="#!">
+                <h3 class="product-book__box-title">Націократія</h3>
+              </a>
+              <a href="#!">
+                <p class="product-book__box-genre">Книга</p>
+              </a>
+              <div class="product-book__price">
+                <p class="product-book__price-persent">-20%</p>
+                <p class="product-book__price-old">200 ₴</p>
+                <p class="product-book__price-new">160 ₴</p>
+              </div>
+            </div>
+
+            <div class="product-book__box">
+              <img src="img/product-two.jpg" alt="" class="product-book__box-pic">
+              <a href="#!">
+                <h3 class="product-book__box-title">Остров Од</h3>
+              </a>
+              <a href="#!">
+                <p class="product-book__box-genre">комікс</p>
+              </a>
+              <div class="product-book__price">
+                <p class="product-book__price-persent" style="display: none;"></p>
+                <p class="product-book__price-old" style="display: none;"></p>
+                <p class="product-book__price-new">200 ₴</p>
+              </div>
+            </div>
+
+            <div class="product-book__box">
+              <img src="img/product-three.jpg" alt="" class="product-book__box-pic">
+              <a href="#!">
+                <h3 class="product-book__box-title">Nіж</h3>
+              </a>
+              <a href="#!">
+                <p class="product-book__box-genre">Книга</p>
+              </a>
+              <div class="product-book__price">
+                <p class="product-book__price-persent" style="display: none;"></p>
+                <p class="product-book__price-old" style="display: none;"></p>
+                <p class="product-book__price-new">50 ₴</p>
+              </div>
+            </div>
+
+            <div class="product-book__box">
+              <img src="img/product-four.jpg" alt="" class="product-book__box-pic">
+              <a href="#!">
+                <h3 class="product-book__box-title">Крук</h3>
+              </a>
+              <a href="#!">
+                <p class="product-book__box-genre">Книга</p>
+              </a>
+              <div class="product-book__price">
+                <p class="product-book__price-persent" style="display: none;"></p>
+                <p class="product-book__price-old" style="display: none;"></p>
+                <p class="product-book__price-new">10 ₴</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="articles col-lg-9">
+            <h4 class="articles-title">Статтi</h4>
+            <div class="articles-box">
+              <div class="articles-box__publication">
+                <p class="articles-box__publication-name">Алексей Рейнс</p>
+                <p class="articles-box__publication-date">12 июля 2020</p>
+              </div>
+              <h3 class="articles-box__title">
+                «Эйприл О’Нил и хипстеры против Чугайстра из Карпат» — впечатление от комикса «Параблог #1»
+              </h3>
+              <p class="articles-box__subtitle">
+                Аниме-клише в украинских Карпатах
+              </p>
+              <img src="img/content-one.jpg" alt="" class="articles-box__img">
+              <div class="articles-box__wrapper">
+                <div class="articles-box__button">
+                  <a href="#!" class="articles-box__button-comment">
+                    <svg class="comment-logo" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="20" viewBox="0 0 21 20">
+                      <image id="Векторный_смарт-объект_копия_2" data-name="Векторный смарт-объект копия 2" width="21"
+                        height="20"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAB2ElEQVQ4jaXVTYjNURzG8c+8eGkIZYGN92nIjomVjVKzwJAsbCQLL7dkj4XNqFGSlSwMJQupke6OsvKWTJGF5iVRE2nyzmLQ0K9+f13XVde9T517uuec53v/v3PPef4tpVJJDU3HDvRiPZagHT/wEg9xA9fxrdreXvW9BXvRh0VVcx8xFyuy7cZrHMMl/CwWtlaYOjCIgQQOIcrowjTMy74rx4dy3UD6OqqhUW4Z2zGBnejGOYxk2bIfyfHuXDeRvnJyfkP7sQmjWJu/XI8Gc/1o+vsL6CocxiS2YrxOYKHx9E0mZ3VAD6INZzD8n8BCw+kPzoGA9uTEhQaBhQp/T0A78RVjTULHktPZmvv6uUlgoU/BC+BbLMSsJoGzsQBvAnovB3ubhG7Jqu/Ex5UcPFoc3gYUN+142i4H9BoeYw1ONQg9m/7glAM6hT35zx3B+cp7XIeW4lCmVYTMVHFNn2IbvmA/nmAfZvyDOTNhoRd4lwc/YvGPlLqd2fkIK/Mwv8fNDJCT2d/K8ee4iMWZr22ZA3/l6TNswK6Mt43YnK1SsWXfM3uj5Fc5GQ91txpaGK5mm491WJ4lf8gAeYA5OJHbtCy9NZ+0WnExovxaKvb/dL4pIlPvwy+bYWc5NsqDgQAAAABJRU5ErkJggg==" />
+                    </svg>
+                  </a>
+                  <p class="articles-box__button-text">7</p>
+                </div>
+
+                <div class="articles-box__button">
+                  <a href="!#" class="articles-box__button-down">
+                    <svg class="btn-top-bottom" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="10" viewBox="0 0 16 10">
+                      <image id="arrow-down-sign-to-navigate_1_копия_5"
+                        data-name="arrow-down-sign-to-navigate (1) копия 5" width="16" height="10"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAbUlEQVQokZXMwQmDQBBA0RcEu0hJFmAN3tOHh2AfKcOWRDYIczCBXcc57TLzfocRA1bsctPjhedxvaHgE4ur6eO2hDXHJxM54xLWA0si8o+XsDKRJr6KpHArksa1yC1ci1Rxq3jspni/I/Q7+AKHeDO72cz8GQAAAABJRU5ErkJggg==" />
+                    </svg>
+                  </a>
+                  <p class="articles-box__button-info">-3</p>
+                  <a href="!#" class="articles-box__button-up">
+                    <svg class="btn-top-bottom" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="10" viewBox="0 0 16 10">
+                      <image id="arrow-down-sign-to-navigate_1_копия_5"
+                        data-name="arrow-down-sign-to-navigate (1) копия 5" width="16" height="10"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAbElEQVQokWNkwA1ActlQ2akMDAz/8ajFACDN06Ga/kPZ+CxDAeiaSTIEXfMmKCbKEGya2aCYoCG4NMMAXkMIaSZoyEQiNOMyBKSX4TeRmrEZ8hvkhEgGBgYFBgaGXgYGhl9EGAAzpJiBgeEBAFwpNAyhFXMTAAAAAElFTkSuQmCC" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-review">
+            <div class="book-review__wrapper">
+              <div class="book-review__photo">
+                <div class="book-review__photo-box">
+                  <a href="#!"><img src="img/book-two.jpg" alt=""></a>
+                  <a href="#!"><img src="img/book-three.jpg" alt=""></a>
+                  <a href="#!"><img src="img/book-four.jpg" alt=""></a>
+                  <a href="#!"><img src="img/book-five.jpg" alt=""></a>
+                </div>
+                <div class="book-review__photo-box">
+                  <a href="#!" class="book-review__photo-one"><img src="img/book-one.jpg" alt=""></a>
+                </div>
+              </div>
+
+              <div class="book-wrapper">
+
+                <div class="book-review__info">
+
+                  <div class="book-wrapper">
+                    <a href="#!" class="book-review__info-link">
+                      <h3 class="book-review__info-aothor">Микола Гоголь.</h3>
+                    </a>
+                    <a href="#!">
+                      <span class="book-review__info-genre">Комікси</span>
+                    </a>
+                  </div>
+
+                  <a class="book-review__info-detail" href="#!">передзамовлення</a>
+                </div>
+
+                <div class="book-review__details">
+                  <p class="book-review__details-one">друкована книга</p>
+                  <p class="book-review__details-two">автор: <span> Микола Гоголь</span> </p>
+                  <p class="book-review__details-two">мова: <span> українська</span></p>
+                  <p class="book-review__details-two">рік видання: <span>2021</span></p>
+
+                  <p class="book-review__fetails-about">
+                    Гоголь опинився у відповідному місці <br> у відповідний час, маючи відповідні <br> знання і бажання досягти
+                    успіху.
+                    Йому також допомогло те, що за складних політичних обставин у
+                    Російській <br> імперії він знав, як ідеологічно <br> пристосувати свої тексти до <br> конкретної політичної
+                    ситуації.
+                  </p>
+                  <div class="book-review__details-wrapper">
+                    <p href="#!" class="book-review__fetails-format">доступні формати:</p>
+                    <div class="bool-review__format">
+                      <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29"
+                          height="31" viewBox="0 0 29 31">
+                          <image id="file_1_" data-name="file (1)" width="29" height="31"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAEX0lEQVRIia2XfUzVZRTHP1wvl3cxhkFvFGYvM1oQoGYJ1UBo8wULNv1DEmu6lAUrp9SMbDUVTMOllqZoUNMECaTCbNJQiCWQlsBkFyyQN4eYBiXy2s5v997uvfy49xJ8t7s99zznOd9znuc85zk/p5GmA6hACywx/J4B7gZc1BStcBtoB8qBIsNv0FpJjXQRsAN4yAESe9ADbwLF5noaq/FWg3eTQYjBTpHBrolLa6awC0jOzisnc/9Jpvt4MWWKRt2UGZrbutmelkD8C6FjqTgBaYbxW+ak8UJ4vr6F/UfPUFW4CS8PV4dCCV74Hh/nnKb7Ri9rlkfaUhXiKqBAQtEBO0VaUd3IirinHCY0oiQ7lWPfVrE7p9SeapbwaQxR3ieSwaEhPNx14yIUuLvpKP7sdU6V17Ht0xJbqsKTIKRLx81ihowN8Sbi/D2v8fOFy6R/VGhrSZyQhk+EtE7fZhrrnLUKcVNLF2mZxxkZGVFbEi6k/hMhLa28ROX5JtN/yficD19REmtt+pdqS+6S4mByp/3qDWWRn+9Uh0kvNXWyNv0LJR80mv+umER5saGVI1lriIl4zGKNBWlJ2UXcXXVEznlkPMGOiUP5Fdzs+YfUpGgLFYvb33C5k99br00KocDJSV1uqkiyHRU1jdTUNnP4+E//myhzYzzl1XpOnP6VlvZuQoPuJ2VlFE5mHpi290jxOb4/U0t2RhIazRgujhPDwyOs2niImIggli+aPTrSX+qaWRwVbEF4tkqvZKG/rzdzggMVb+U69PT24erizMOBfor+7f5BUwZLNZPoBDInNmVOlXRgYGhUhInrD/Lyi/Noaqlhyye3KNqXzMJXdxEzP4jOrptc6bhO4b5k6vXtyr2MjQjCZ5qHidRILLbNocUGPNx0bE5ZrChEJ+5UXhQXnTNZ7yxTZPIibdn7HUuig5kbPMOkaw82366/evv4o/UaP5TX03b1T/yne1vMvxQbSkWNXhmXnWsg9f2jfF5gPwltRiqJsHnXCbw8XSnYu045R0unbuHt5a6MHwy4k7gFIdzjN21ipL4+nhzevkp1Tq7YjgOnlHMU3Ot/B886WFRke3vGmnRzdVaVy8P9aPQmZZyaFIWrzhmt1n6XYUC/RNohmS5bZ51lZ79KG7XiwjfvjpLNDZnB7CcCVRnEptWxdIh7v8koNjKI3bmlylUwQutAj2SEWkERW2JTbJuhSiKVFzdeziPs8QeYl7CVqZ5uYxo/uG0lJ8tqySuptuuIJNrSBU9an3WhlEHpTxqllZAeR6rOuhXPORyhLezJ/VFJuOTE541aV4CZsn/9wHqRPB02k9zCSnr+7pswodgQW2LTDG8YE0lwDJgfMisgefWyCMLjPnC471XD0NAwXdd72LA6lpBZAUaNDCAfq88KjaEVTZlwmKMhhG9LvTESGSGCVEN3KGc8GRA78hEmd08htI7UHLLtCQYHwqTgAOqVwhIDQCsgqf01kDfqqw34F00KfcPpZ6noAAAAAElFTkSuQmCC" />
+                        </svg>
+                      </a>
+                      <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29"
+                          height="31" viewBox="0 0 29 31">
+                          <image id="file_2_" data-name="file (2)" width="29" height="31"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAEmklEQVRIib2Xe0yVZRzHPwdfDndQDyJyESQTNRVKk1WbtdKljsgLrma2qTOlqSXecgs1/YepkwjziproNJcuOmrOy9xMsqm5tAsWMsQQBYqBF1Dkcmi/Z+979nI4KshZ3+0dPM/5Pb/v87s+z2NpLdmOG2hAMvA2kAREACHuBF3QANwECgA7cARodhVyRzoeWAcM7gDJk3AFWAp8b5bzMm8AWK3vzhOE6HoO63otxqRmElgDLDEGO74pICfvFAF+PlitGiFBfuRvnstbH+RQ/6CxQ4wtLQ5lzMndC5f7+nj76lY73TsByDeEvzp4FvvJS+zJmkVQgG+XTJ22cDtLZ49l2MAoGU4SHnGvFfjCLLgh7xQ718zoMqFA6+aFw9FqDLOFT0hTgb5mwRaHg57dA7pM6AbCM1nTXdsGjU3NXL5ywyMsNXfqXacmSkxLgVgZNTxsYmLaRjTNC1v3QI+QVtfWKSPsW+fh5yuR5G8hlYL2kdGWfae5VXWb1entjO8SMrLyiQrvQdrU10RNo2YQCq6WVjFq5ACaWxycvViMhD/Q34chAyI5UVCIxWJRWRgTaeNmVa0qp+7B/mrtXyWVPBsbxunzRdyrb6BfVCgJg6LVbyOGxnLmwlWDxmpuDs4sK7x6kzkZezh9rogfLxZz/vI1VmTb+fm3UuX+Y2f+IHd/gSIwsGztQW5U1PBeeq7Kh8WZB8jdf6adblw6khOtrTAwLpzPPk5hwYwxyuLEQdHK7ZtWT2Ov/dwjvR3eK0StW5Y2jp9+KXEr45ZUcP7XUibM+ZLMzUfVuOxWDQeOXmRVziHeeHnQI0mLrlWSmLyKSR9uIswW9GRSfz8rvj7e6v+h8ZFkL3/XCD519xtUHMWC6ZNfwcvLQlNTi3Ot1LYgPi6cy0dWUnUhi+MFhVT8c6cdqbn3KrdYvTUVE2+tm0oS+SsY3D9CudpAUkIc63cc58VhsZSU/cu1smqi+vRU/fb23fuqVJqbWwjwtz6edGW2nVeT4lX8hHz6kp30Dg1myeyxvPTCM20WvjnqOe7WPWD+qn2E2YKxb5unWl5slI0JaRvVAZH16TsEB/o9ntTH6k11TZ1Khvwtc9sI9o8Ja7d4yvgR6jPjcO5H7eTq6h+qTbglTR03XJ0K4b2CCe3hPgk6i+rae6zddoy9n89yrpSO1GrWc+lKGWPezyL59WEeIZU6FzenjE50b6ng+cF9ierTg13rZnqEVPKib4StzZyUzD2PaO84GoX01v9MWiHu/V1q2vWX4utVFBZ3fj/Dh8SoI9JYK53MBRc0/W6Uap4vr6hl5ie7SBmd4GwOHUVcdC8eNDRyvbxarSgqrWxTLsB3QnoQyDRfWaQVnshLNw7dp0JSYpw6WbZ+/QP9okMNFWXCJzGV++QCs+KI3iGUV9Y+NaEB6c9CrF9FBenGIY7u4vXAIhnkrJjKlHlb1AGuad1Uezu0bT5zMnZzo6Jzm5EeLAbERNqygG9xeVZY9OfEoi6b2B5ikFzkVSMyH20ysRhI0d8gnsCfuj7R6+x8j3u1TdS/kYBcdjqSVZIf5XIH0EMmX9tXG/AfFcSRwCIe3ZsAAAAASUVORK5CYII=" />
+                        </svg>
+                      </a>
+                      <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29"
+                          height="31" viewBox="0 0 29 31">
+                          <image id="file" width="29" height="31"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAEWklEQVRIibWXDUxVZRjHf1wu38iXBEgoNoEUApnD2hCNkjHLgpxiG8tU5pybLBmGWvS52dScoFQblQE2tYYWMFyZDMYUFgmZOhQBHVDAFUbdmOb4EGjP6d7LuddLSPf23872vu95z/M7z3nf53mf4zBx6yhWpAVSDVcCEAy4WJtooWGgF6gDKgzXfctJ1qAvAoeA8IeATKd2YCdQqZ6nsWjvM7ydPYAY7FQY7JpYWtWEI0CmsfNF6QUKjlXj4eaCs7P2AWsPo7GxcZnlUPVl9h5XFydpv6GGrlMDi0/XU1l9hbrSPczycLXJ1Veyj9LW0UfMwpA9QCPwrbjsDOSpJ350rJqiA5ttBoq0jhrGxyeM3cPC0xi8nKueODY+jp+Ph81AKxJOmnzeNZb3Rkbvc/n6b3ah/DH4l+XQSxIynUCo9IaGR1mz7ROcnBzx87aPpwP6u4oTFZ9m4uYqK0mXQIeMgV94shZd/yDvZ6XaBWjUW3llhAT5si09UUZGtOpMI7tsxZMRZg+03NTxw4VmpR39eAgLFwRx6rsmHBwcWBrzGPFLFij3Gq92cvn6r6x+JobgQB8zG3HR8zl/sc3YdVYnB/UuM0mAzW29+Hi54+XpphivbWhV2jn7Sqn9qZW6pna2v3ucoZFRkjfmcffesJmNecF+RIYFm/oPFfUJcWFsWrtMafdU6YmNnMfmdcvo6dNz45aO5UsjOHl4K2GhAVTXt9DV8ztR4ZOQ8PmB+HpN7hGNVYqF9hd+T2L6QcrOXVJulHxTT8L6/ez9+AxzAnwUgAB/bu6it/9PIsPmmBmo+fGGkt1m5OlrG1eSnvKUkiwqa64oXr+3I0XxNGnDIVKTYtEP3mPzrmK+OrJVWW+1JiYmlMsqVKNxQGPxgMjdzVlZU0uNjU2gdXRUDGbsLmbnlmSzzzqVzKC521fj6W6e+gL9vfH1ngRK/H595iLlVb/g6e5C4d4NtHf2c629l47uAfKLqti/ay2rVjwxJVTi1OT3iYoGgh7xZmX8omnfdiY6Xt5Ae2efKf7NPF28aC7pWZ+Tl7sef99ZdgEO6O/w4WdnOZG/xbqnokvXukh+NZ8Xno2xC1RiOC/3ZVKSYk1jD+zeJVGhhMzxpeRghl2gm3KKmBc822xM4vSOXaxPoecToy3T4ohAdf8nNMDfCxfzckcnvatAhOVk2W0SBiJ56Lmnozl7vlk5/maigpJqZU1jI011QqNAyw3Vg0ndOj0Zu0tISVqMk9YRZ6d/3rSze2DG0NaO23jPclMPlcvulZP1prpkCYnPob3mA+Oh+58lp1bUqrdpObfXaELKkTBZ0xHgdbXh4EBvum/rbQKKJK0K2FCKirKNh7ioFFhuLEML3kknLbNQSXNaraNNYClXxIHQR2cfAE5j8VuhMZSiO2yiWJcA35QvbgQZJQNZhupQ1tgeEjuScKXQNn3jf/trSzO8QJzsLUD5L5hGsrW7gSagDDj1wF8b8Dc3qG3pe3SVkgAAAABJRU5ErkJggg==" />
+                        </svg>
+                      </a>
+                    </div>   
+                  </div>  
+
+                  <div class="book-review__details-wrapper">
+                    <p class="book-review__details-price"> 400 ₴ </p>
+                    <a href="#!" class="book-review__details-buy">КУПИТИ</a>
+                  </div>
+                  <a href="#!" class="book-review__details-button">ЗАВАНТАЖИТИ БЕЗКОШТОВНО</a>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="book-inner">
+              <p href="#!" class="book-review__code">артикул: 3974-93-4538</p>
+              <a href="#!" class="book-review__link">друкована версія тут</a>
+            </div>
+          </div>
+
+          <div class="discount">
+            <h3 class="discount-title">Спецпропозиція!</h3>
+            <div class="discount-wrapper">
+              <div class="discount-box">
+                <img src="img/product-one.jpg" alt="">
+                <p class="discount-box__name">Націократія</p>
+                <div class="discount-box__info">
+                  <a href="#!" class="discount-box__genre">Книга</a>
+                  <p class="discount-box__price">160 ₴</p>
+                </div>
+              </div>
+
+              <div class="discount-box__sign">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50"
+                  height="50" viewBox="0 0 50 50">
+                  <image id="plus" width="50" height="50"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAA7UlEQVRoge2aMQrCQBREJyooHsdGwUJPsGcKqSw9izewSBu8jEIqRdg0Ya2ys4xhHnwSFrKTF9iEfBZkGgDPWA07jEUA8B5VYIUtiCK7xNiRFcYUSbFmTVxahIZF1LCIGhZRwyJqWEQNi6hhETUsosZsRFbxGH78Y0/hnLj2AKDOnNMBuCG2acbdjn+rpoo9p23mp1Sa12zWyBLABsBJ4F6mcKniSYjNs5x9p+/C3o/GHgDuGTN6AO2w2FnUiRfGlRXmD6IaFlHDImpYRA2LqGERNSyihkXUsIgapUV61sRMkS4x1hLzqJTZeAbgAwwHTmx/430HAAAAAElFTkSuQmCC" />
+                </svg>
+              </div>
+
+              <div class="discount-box">
+                <img src="img/product-three.jpg" alt="">
+                <p class="discount-box__name">Nіж</p>
+                <div class="discount-box__info">
+                  <a href="#!" class="discount-box__genre">Книга</a>
+                  <p class="discount-box__price">50 ₴</p>
+                </div>
+              </div>
+
+              <div class="discount-box__sign">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50"
+                  height="22" viewBox="0 0 50 22">
+                  <image id="plus_копия_2" data-name="plus копия 2" width="50" height="22"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAWCAYAAACCAs+RAAAAqUlEQVRYhe2XMQqDQBBF3xpIRIvcxdbCG3goq5zHO9h6lxQJGNANi4uksNGsMso8mGaLmf1/+QtjGCmBjPVcgRvwAoaZLhGQAh3w+WPOHC1Qu/MKsAevyngXk8Au7c07OriAiQsQA4WQ+6zl8Rv23Ac2NHegd8/v+ybewGeAOe7zaFzYjbV2N9u25DQZUSHSUCHSUCHSUCHS0H1EWOk+Ig7dRxaw/T4C9RcHo4JRlsyceQAAAABJRU5ErkJggg==" />
+                </svg>
+              </div>
+
+              <div class="discount-inner">
+                <p class="discount-inner__price">180 ₴</p>
+                <p class="discount-inner__old-price">210 ₴</p>
+              </div>
+
+              <a href="#!" class="discount-box__btn">Купити</a>
+
+            </div>
+          </div>
+
+          <div class="comment">
+            <h3 class="comment-title">Відгуки покупців</h3>
+            <div class="comment-wrapper">
+              <div class="comment-block">
+                <div class="comment-inner line">
+                  <div class="comment-posts">
+                    <p class="comment-posts__name">Геннадий Говорухин</p>
+                    <p class="comment-posts__date">22 січня 2021</p>
+                  </div>
+                  <div class="comment-rate">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABVUlEQVQ4ja2VLU8DQRCGH5qaEkwFH034kigIElAEU1WBAt8gIEHS8A+gP6AJCDwCgwcUICsRaMKXI5eatgmZME2W61x3766TTG7unX2f29xN9ib6T+cExoFeL0MWFwOh28CF1q/Ag89QCAQfJ9S5wMtAzbmvqZYbfBhbV1AtF3gSqBt6XXuZwftA2dDL2ksMGbdVYAeY1ZwDZoAKMD1icnrAN/AOfAEfwKfmnZgegSnPzq0o6sMrRi+SV9HOAPVFW8BV4HaMUGFVBdwBdoHWGKAtZXUGU9EHjoBGDmhDGcIaGrcmsKdfPDR66mm66605vgG6KcBd9fwLC7wOlFKAS+rxgjdSQBM9FngrA3jIY4E3DS0CTjUjo+/d8QIwH9OugRXgTFNq0Ub64uBFp37Rw0lG6c3RpRZNerJmEEsuKH5yPQMnwA9w5Rm7e2BNf7JyNov3L4BfMvE7Yrs21NQAAAAASUVORK5CYII=" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABVUlEQVQ4ja2VLU8DQRCGH5qaEkwFH034kigIElAEU1WBAt8gIEHS8A+gP6AJCDwCgwcUICsRaMKXI5eatgmZME2W61x3766TTG7unX2f29xN9ib6T+cExoFeL0MWFwOh28CF1q/Ag89QCAQfJ9S5wMtAzbmvqZYbfBhbV1AtF3gSqBt6XXuZwftA2dDL2ksMGbdVYAeY1ZwDZoAKMD1icnrAN/AOfAEfwKfmnZgegSnPzq0o6sMrRi+SV9HOAPVFW8BV4HaMUGFVBdwBdoHWGKAtZXUGU9EHjoBGDmhDGcIaGrcmsKdfPDR66mm66605vgG6KcBd9fwLC7wOlFKAS+rxgjdSQBM9FngrA3jIY4E3DS0CTjUjo+/d8QIwH9OugRXgTFNq0Ub64uBFp37Rw0lG6c3RpRZNerJmEEsuKH5yPQMnwA9w5Rm7e2BNf7JyNov3L4BfMvE7Yrs21NQAAAAASUVORK5CYII=" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABVUlEQVQ4ja2VLU8DQRCGH5qaEkwFH034kigIElAEU1WBAt8gIEHS8A+gP6AJCDwCgwcUICsRaMKXI5eatgmZME2W61x3766TTG7unX2f29xN9ib6T+cExoFeL0MWFwOh28CF1q/Ag89QCAQfJ9S5wMtAzbmvqZYbfBhbV1AtF3gSqBt6XXuZwftA2dDL2ksMGbdVYAeY1ZwDZoAKMD1icnrAN/AOfAEfwKfmnZgegSnPzq0o6sMrRi+SV9HOAPVFW8BV4HaMUGFVBdwBdoHWGKAtZXUGU9EHjoBGDmhDGcIaGrcmsKdfPDR66mm66605vgG6KcBd9fwLC7wOlFKAS+rxgjdSQBM9FngrA3jIY4E3DS0CTjUjo+/d8QIwH9OugRXgTFNq0Ub64uBFp37Rw0lG6c3RpRZNerJmEEsuKH5yPQMnwA9w5Rm7e2BNf7JyNov3L4BfMvE7Yrs21NQAAAAASUVORK5CYII=" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABVUlEQVQ4ja2VLU8DQRCGH5qaEkwFH034kigIElAEU1WBAt8gIEHS8A+gP6AJCDwCgwcUICsRaMKXI5eatgmZME2W61x3766TTG7unX2f29xN9ib6T+cExoFeL0MWFwOh28CF1q/Ag89QCAQfJ9S5wMtAzbmvqZYbfBhbV1AtF3gSqBt6XXuZwftA2dDL2ksMGbdVYAeY1ZwDZoAKMD1icnrAN/AOfAEfwKfmnZgegSnPzq0o6sMrRi+SV9HOAPVFW8BV4HaMUGFVBdwBdoHWGKAtZXUGU9EHjoBGDmhDGcIaGrcmsKdfPDR66mm66605vgG6KcBd9fwLC7wOlFKAS+rxgjdSQBM9FngrA3jIY4E3DS0CTjUjo+/d8QIwH9OugRXgTFNq0Ub64uBFp37Rw0lG6c3RpRZNerJmEEsuKH5yPQMnwA9w5Rm7e2BNf7JyNov3L4BfMvE7Yrs21NQAAAAASUVORK5CYII=" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABVUlEQVQ4ja2VLU8DQRCGH5qaEkwFH034kigIElAEU1WBAt8gIEHS8A+gP6AJCDwCgwcUICsRaMKXI5eatgmZME2W61x3766TTG7unX2f29xN9ib6T+cExoFeL0MWFwOh28CF1q/Ag89QCAQfJ9S5wMtAzbmvqZYbfBhbV1AtF3gSqBt6XXuZwftA2dDL2ksMGbdVYAeY1ZwDZoAKMD1icnrAN/AOfAEfwKfmnZgegSnPzq0o6sMrRi+SV9HOAPVFW8BV4HaMUGFVBdwBdoHWGKAtZXUGU9EHjoBGDmhDGcIaGrcmsKdfPDR66mm66605vgG6KcBd9fwLC7wOlFKAS+rxgjdSQBM9FngrA3jIY4E3DS0CTjUjo+/d8QIwH9OugRXgTFNq0Ub64uBFp37Rw0lG6c3RpRZNerJmEEsuKH5yPQMnwA9w5Rm7e2BNf7JyNov3L4BfMvE7Yrs21NQAAAAASUVORK5CYII=" />
+                    </svg>
+                  </div>
+                  <p class="comment-post__text">
+                    Книга интересная, хотя не скажу, что это прям триллер - особого напряжения не было.
+                    Идея не кажется правдоподобной,
+                    но если считать её фантазией автора, то она имеет право на существование.
+                  </p>
+                </div>
+
+
+                <div class="comment-inner">
+                  <div class="comment-posts">
+                    <p class="comment-posts__name">timkina94</p>
+                    <p class="comment-posts__date">24 вересня 2020</p>
+                  </div>
+                  <div class="comment-rate">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABVUlEQVQ4ja2VLU8DQRCGH5qaEkwFH034kigIElAEU1WBAt8gIEHS8A+gP6AJCDwCgwcUICsRaMKXI5eatgmZME2W61x3766TTG7unX2f29xN9ib6T+cExoFeL0MWFwOh28CF1q/Ag89QCAQfJ9S5wMtAzbmvqZYbfBhbV1AtF3gSqBt6XXuZwftA2dDL2ksMGbdVYAeY1ZwDZoAKMD1icnrAN/AOfAEfwKfmnZgegSnPzq0o6sMrRi+SV9HOAPVFW8BV4HaMUGFVBdwBdoHWGKAtZXUGU9EHjoBGDmhDGcIaGrcmsKdfPDR66mm66605vgG6KcBd9fwLC7wOlFKAS+rxgjdSQBM9FngrA3jIY4E3DS0CTjUjo+/d8QIwH9OugRXgTFNq0Ub64uBFp37Rw0lG6c3RpRZNerJmEEsuKH5yPQMnwA9w5Rm7e2BNf7JyNov3L4BfMvE7Yrs21NQAAAAASUVORK5CYII=" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABVUlEQVQ4ja2VLU8DQRCGH5qaEkwFH034kigIElAEU1WBAt8gIEHS8A+gP6AJCDwCgwcUICsRaMKXI5eatgmZME2W61x3766TTG7unX2f29xN9ib6T+cExoFeL0MWFwOh28CF1q/Ag89QCAQfJ9S5wMtAzbmvqZYbfBhbV1AtF3gSqBt6XXuZwftA2dDL2ksMGbdVYAeY1ZwDZoAKMD1icnrAN/AOfAEfwKfmnZgegSnPzq0o6sMrRi+SV9HOAPVFW8BV4HaMUGFVBdwBdoHWGKAtZXUGU9EHjoBGDmhDGcIaGrcmsKdfPDR66mm66605vgG6KcBd9fwLC7wOlFKAS+rxgjdSQBM9FngrA3jIY4E3DS0CTjUjo+/d8QIwH9OugRXgTFNq0Ub64uBFp37Rw0lG6c3RpRZNerJmEEsuKH5yPQMnwA9w5Rm7e2BNf7JyNov3L4BfMvE7Yrs21NQAAAAASUVORK5CYII=" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABVUlEQVQ4ja2VLU8DQRCGH5qaEkwFH034kigIElAEU1WBAt8gIEHS8A+gP6AJCDwCgwcUICsRaMKXI5eatgmZME2W61x3766TTG7unX2f29xN9ib6T+cExoFeL0MWFwOh28CF1q/Ag89QCAQfJ9S5wMtAzbmvqZYbfBhbV1AtF3gSqBt6XXuZwftA2dDL2ksMGbdVYAeY1ZwDZoAKMD1icnrAN/AOfAEfwKfmnZgegSnPzq0o6sMrRi+SV9HOAPVFW8BV4HaMUGFVBdwBdoHWGKAtZXUGU9EHjoBGDmhDGcIaGrcmsKdfPDR66mm66605vgG6KcBd9fwLC7wOlFKAS+rxgjdSQBM9FngrA3jIY4E3DS0CTjUjo+/d8QIwH9OugRXgTFNq0Ub64uBFp37Rw0lG6c3RpRZNerJmEEsuKH5yPQMnwA9w5Rm7e2BNf7JyNov3L4BfMvE7Yrs21NQAAAAASUVORK5CYII=" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAACT0lEQVQ4jaWVP2hTQRzHPxeaQtsXMWhM2moNuIiKRTcVBXVx6uCi7sWhgotgB0dxsODiUFoHdwcdOggVrVBRB6HQqQE1hqKYiMU/jVH6kpz87u41Sc1LgvnCXX53v+/3+y73fndPVV7dpkNcdr/3OiH3dGh6Gph18VvgeTtBpEPjqyFxV8ZpYKxuPObmujaeEJ5KHESa00x0a9wPjEugkkdMcxh3uf82vgTE1fY0xIZMMzHEXS4UUhWHgbNA0rUUsAsYBBJGuPNATS/x95xEM8BN4DPwBcgDBdeeifFLwAt7skqOohKHamOJ1z+hC8s97uGDTWRFOSCLwEl6PdTIKYgOoKJ9EPUg2g8qZLd0FfwS+EW0/xv8X+jVRdgoSvaFqM4BczKh3z0GXYGBFPKgUFOz9IjlCFdXrNaazomnKEvAeWDaLCTzCJ1favVeGheeXzIah2nnVQqWVAGuAJOG/OEpOjvf3jQ7b7gOk85DvP4ptyngIlDWhWW7j6GuVQwHyk4zVZ9utokPAd+KKy2MN3O+0zSgmbEcrz68FESi4caSE45wraYBza7NY9Ipb6i2uG/vTe0axIZR8X0EHF3MB5o37YxPmH7bblM+OreAXss0MnbsR6XPWI6tINHcbWd83PSlr1SzT6D8R0ZSoLdc/oZey3j6Rw6VOtrwL+ux9dO0B1ilNwYb68HcA+Aa4PaCYeAOcMGM5JDYgyHaj4Fo68sbMb01XXGXk5RSYCqQWOYkt+JMBXtbbcVr4DrwE7i/WXbNsQCMuo+s3M2itQD+AriJrw7Eeup2AAAAAElFTkSuQmCC" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                      height="22" viewBox="0 0 22 22">
+                      <image id="star_копия_5" data-name="star копия 5" width="22" height="22"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAACT0lEQVQ4jaWVP2hTQRzHPxeaQtsXMWhM2moNuIiKRTcVBXVx6uCi7sWhgotgB0dxsODiUFoHdwcdOggVrVBRB6HQqQE1hqKYiMU/jVH6kpz87u41Sc1LgvnCXX53v+/3+y73fndPVV7dpkNcdr/3OiH3dGh6Gph18VvgeTtBpEPjqyFxV8ZpYKxuPObmujaeEJ5KHESa00x0a9wPjEugkkdMcxh3uf82vgTE1fY0xIZMMzHEXS4UUhWHgbNA0rUUsAsYBBJGuPNATS/x95xEM8BN4DPwBcgDBdeeifFLwAt7skqOohKHamOJ1z+hC8s97uGDTWRFOSCLwEl6PdTIKYgOoKJ9EPUg2g8qZLd0FfwS+EW0/xv8X+jVRdgoSvaFqM4BczKh3z0GXYGBFPKgUFOz9IjlCFdXrNaazomnKEvAeWDaLCTzCJ1favVeGheeXzIah2nnVQqWVAGuAJOG/OEpOjvf3jQ7b7gOk85DvP4ptyngIlDWhWW7j6GuVQwHyk4zVZ9utokPAd+KKy2MN3O+0zSgmbEcrz68FESi4caSE45wraYBza7NY9Ipb6i2uG/vTe0axIZR8X0EHF3MB5o37YxPmH7bblM+OreAXss0MnbsR6XPWI6tINHcbWd83PSlr1SzT6D8R0ZSoLdc/oZey3j6Rw6VOtrwL+ux9dO0B1ilNwYb68HcA+Aa4PaCYeAOcMGM5JDYgyHaj4Fo68sbMb01XXGXk5RSYCqQWOYkt+JMBXtbbcVr4DrwE7i/WXbNsQCMuo+s3M2itQD+AriJrw7Eeup2AAAAAElFTkSuQmCC" />
+                    </svg>
+                  </div>
+                  <p class="comment-posts__text">
+                    Эту книгу можно описать одним словом "Посредственность". Так много хайпа
+                    вокруг книг их этой серии, столько надежд и такое разочарование.
+                    Судя по всяким описаниям это первая книга из цикла, но тогда непонятно, почему столько
+                    непрописанных...
+                  </p>
+                  <div class="comment-posts__wrapper">
+                    <a href="#!" class="comment-posts__all">всі відгуки</a>
+                    <a href="#!" class="comment-posts__btn">НАПИСАТИ ВІДГУК</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment-status">
+                <div class="comment-status__buyers">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202"
+                    height="202" viewBox="0 0 202 202">
+                    <image id="_93_" data-name="93%" width="202" height="202"
+                      xlink:href="data:img/png;base64,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" />
+                  </svg>
+                  <p class="comment-status__buyers-text">Рейтинг покупців</p>
+                </div>
+                <p class="comment-status__watch">Дивитись обзор на</p>
+                <div class="comment-status__youtube" style="background-image: url('img/video.jpg');">
+                  <a href="#!">
+                    <svg id="Группа_31" data-name="Группа 31" xmlns="http://www.w3.org/2000/svg" width="91" height="91"
+                      viewBox="0 0 91 91">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #fff;
+                          }
+
+                          .cls-2 {
+                            fill: #e21b1b;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <circle id="Эллипс_2" data-name="Эллипс 2" class="cls-1" cx="45.5" cy="45.5" r="45.5" />
+                      <path id="Многоугольник_2" data-name="Многоугольник 2" class="cls-2"
+                        d="M1336,3517l-42.75,24.68v-49.36Z" transform="translate(-1263 -3471)" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bunner-two"></div>
+
+          <div class="about">
+            <div class="about-wrapper col-lg-8">
+              <div class="articles-box__publication">
+                <p class="articles-box__publication-name">Алексей Рейнс</p>
+                <p class="articles-box__publication-date">12 июля 2020</p>
+              </div>
+              <p class="about-title">«Эйприл О’Нил и хипстеры против Чугайстра из Карпат» — впечатление
+                от комикса «Параблог #1»
+              </p>
+              <p class="about-text">Аниме-клише в украинских Карпатах.</p>
+              <img src="img/book-pic.jpg" alt="" class="about-img">
+
+              <p class="about-review">
+                Комикс пытается эксплуатировать образы украинского фольклора, но у сценариста-иностранца
+                Эвана Вольфа это выходит из рук вон плохо. За аннотацией, которая обещает мистическую атмосферу тайн
+                Восточной Европы,
+                скрывается крайне банальная и стандартизированная история поисков вездесущего Снежного Человека (того
+                самого Йети).
+              </p>
+              <p class="about-review">
+                Наивная интернет-журналистка «Паранормального блога» прибывает в Карпаты в поисках «чего-то необычного».
+                Здесь она с шоком узнаёт легенду о Чугайстре (что особо иронично, поскольку украинские школьники
+                знакомятся
+                с ней начиная с Букваря), принимает монстра за аналог американского бигфута и, заручившись поддержкой
+                таинственного охотника, начинает поиски. Процесс дотошно конспектируется в блоге,
+                ради которого авторы услужливо провели стабильный Интернет даже в самые отдалённые горные отели.
+              </p>
+              <div class="about-quote">
+                <p class="about-quote__text">
+                  Чем истины выше, тем нужно быть осторожнее с ними: иначе они вдруг обратятся в общие места,
+                  а общим местам уже не верят.
+                  Без носа человек — черт знает что:
+                </p>
+                <div class="about-quote__wrighter">
+                  <img src="img/wrighter.png" alt="">
+                  <div class="about-quote__name">
+                    <p class="about-quote__name-wrighter">М. Гоголь</p>
+                    <p class="about-quote__name-info">писатель, молодец</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="about-review">
+                Диссонанс между локацией «украинские Карпаты» и визуалом удручает. Художница вложила много сил в
+                картинку,
+                при этом совершенно её обезличив. Не обманывайтесь терминами «шинок, горный отель, горилка» — вместо
+                них вас ждут «таверна, пентхаус, виски».
+                Чугайстр же, являющийся уникальным существом украинской мифологии, вовсе изображён как рогатый мутант.
+              </p>
+
+              <p class="about-review">
+                В ходе детективной истории сценарист там и сям расставляет зацепки на будущее. Спутник героини имеет
+                сверхсилы,
+                при этом мечтая от них избавиться; реального чугайстра-йети сопровождает эксцентричная женщина;
+                сам ход поисков направляют манипуляторы из тени.
+                И эта интрига работает. Ты реально втягиваешься и ждёшь ответов.
+              </p>
+
+              <p class="about-review about-review--last">
+                Персонажи обладают стереотипными характерами и такой же стереотипной внешностью. Пытливая
+                девушка-репортёр Даша,
+                угрюмый и благородный экс-военный Виктор, любвеобильный бармен Слава и коварные браконьеры-лесники.
+                Визуально мужчины выглядят как хипстеры из барбершопа. О последнем, к слову, шутит и сама художница,
+                «ломая» четвёртую стену.
+                Вот только констатация этого факта не переводит его из минусов в плюсы.
+              </p>
+
+              <a href="#!" class="about-links">#хештеги</a>
+              <a href="#!" class="about-links">#мир</a>
+              <a href="#!" class="about-links">#дружба</a>
+              <a href="#!" class="about-links">#жвачка</a>
+
+              <div class="about-buttons">
+                <div class="about-buttons__box">
+                  <a href="#!" class="about-buttons__box-comment">
+                    <svg class="comment-logo" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="20" viewBox="0 0 21 20">
+                      <image id="Векторный_смарт-объект_копия_2" data-name="Векторный смарт-объект копия 2" width="21"
+                        height="20"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAB2ElEQVQ4jaXVTYjNURzG8c+8eGkIZYGN92nIjomVjVKzwJAsbCQLL7dkj4XNqFGSlSwMJQupke6OsvKWTJGF5iVRE2nyzmLQ0K9+f13XVde9T517uuec53v/v3PPef4tpVJJDU3HDvRiPZagHT/wEg9xA9fxrdreXvW9BXvRh0VVcx8xFyuy7cZrHMMl/CwWtlaYOjCIgQQOIcrowjTMy74rx4dy3UD6OqqhUW4Z2zGBnejGOYxk2bIfyfHuXDeRvnJyfkP7sQmjWJu/XI8Gc/1o+vsL6CocxiS2YrxOYKHx9E0mZ3VAD6INZzD8n8BCw+kPzoGA9uTEhQaBhQp/T0A78RVjTULHktPZmvv6uUlgoU/BC+BbLMSsJoGzsQBvAnovB3ubhG7Jqu/Ex5UcPFoc3gYUN+142i4H9BoeYw1ONQg9m/7glAM6hT35zx3B+cp7XIeW4lCmVYTMVHFNn2IbvmA/nmAfZvyDOTNhoRd4lwc/YvGPlLqd2fkIK/Mwv8fNDJCT2d/K8ee4iMWZr22ZA3/l6TNswK6Mt43YnK1SsWXfM3uj5Fc5GQ91txpaGK5mm491WJ4lf8gAeYA5OJHbtCy9NZ+0WnExovxaKvb/dL4pIlPvwy+bYWc5NsqDgQAAAABJRU5ErkJggg==">
+                      </image>
+                    </svg>
+                  </a>
+                  <p class="about-buttons__box-text">28</p>
+                  <a href="#!">
+                    <svg class="facebook-btn" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="30" viewBox="0 0 112 30">
+                      <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="112" height="30"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAAAeCAYAAAD0HpphAAAEjklEQVRoge1bXWgcVRT+dpMUMYY4rU1JtWp2aattFMoGJdOXSjc0VF+0rI4UWvVhIj5oregGBRH/2GAfVETdAV+k4JB9EBRrYBfbooz9W1psxNKSqcE01sa6rZZYRbpyhnM3d2KrnWSn6eD9YNh7z5w5c+d895x7587dGADohtUL4DUAqwB4MoWrFlUABwG84NjmUIzJ+wxAfA5b/DCAk6rPXBY09tcGAPc2cuTNJXmEPY5tfj/HbYgSPtYNa5C4i3PaVIgePiLu4mrMiywqxN1cp06FWUIRGHEoAiMORWDE0TjT5i9pb0WmtxOrbm9HS/M8nD4ziX3fnEBhaBi/nP39/+7XK4YZEfhAzwo8/YiOeHxqArtwfjNuSyzEhnUr8OLbX2DPoR+i5otIIjCBa7sTeOax1bV6tQps/+QQyt+O4+b2Vmx9dDVyW3vw+Euf4og7EYpPdMNKTBNVHNus1MGuNls79bARBIHGwHlNDXhqU7dPtnOvi/ft/ZioTKKxscGTNTU1YMvm7ktYmR2YvBEARekYrINdE0CuDk08cJEOFhoCRWBX541YcP21PtkR92fvd9uz69De1lKT37FsERa3tWD81G9htb3HsU1XFrDj0hyRBUme4TXEsmObZZalANDhOrZZuohuSdiX7BIKIsIkG777TbPlinuGgUAEJpZovnrRGcGx0dNeedf+41h26w1IrVxcO99xkxYmgZro6eRodmaeSKKm6oaVdmyzTzesnCAKgKkbVj+dpzLrZnXDGmCbgjyw7oPiUYlQPkf6XaxrSvfLOLYp9Im8LJPeF5YDEJTAWMy/6rbtg69wbvJPr/zO9r24b81yH4Eho5Y2mRRyrsWOzjABgqgkRQ2RyuRl2bEu62f52rIggReLTWHXsc0BlhfZvmeDopfGPUrrUuqk61KObfaE7YRAY+DoiTO++hvP9eKeuzu88stPrsXm+/3r4qPjfv06g1Joko+CiDAmNi3dqjbB4VRZYFLyHFk5XlcE2xAos15COi90ND5ctluZppPiqAx9LAxE4L7DYzh77nytfufyRWib3+yVVy5t88Y8ge9GJjB28tc6N/dfkeXxqYujCuzUWqrltJZjx1P0JKkjSEZlh6dZr8yECIh07IqOwvY1icQ+7ij5sB86EIHn//jLS5X/hQsXqnjrw69DavIlUeK0OchO1tjBlPqKLM9wnVJuXjesPEesmIBQ1BQ5TYqUTEdakrsc8WQjx3ZJPiC/Pji22c+dJxvmQwd+D9yx+yhar7sGT2y8C/HYP79EEcmvvLsLh4/+VK82+sATluT0GSiNUbphlbhcpqiQZpEFJrXETnaliUi/NKsscBRq0sy0wropTKVh8NiXFJ1Emml2SUSGPgbSlorqTC5cessCPLS+EweGxzH05TG8+fx6HB+rYPDzYfw4EXjm2aG+yAeDblhr6DV8xmuh9Prw6nu7a/Utr++44g+hoL5GRB6KwIhDERhxKAIjjjjv9FWIHug9tRrnbdoK0QPtzj54tWytp6WnU6oTXRaaeAHC21qv/twSPUz9ucU2h/4GdFG2gxAmWXwAAAAASUVORK5CYII=" />
+                    </svg>
+                  </a>
+                  <a href="#!">
+                    <svg class="twitter-btn" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="30" viewBox="0 0 112 30">
+                      <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="112" height="30"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAAAeCAYAAAD0HpphAAADa0lEQVRoge2bz2vTYBjHv+1aNzeVdOhEfXewE3cRRDvBi+CPDkSPsoOgI6cN/4INPIjiwP0BHuwpnoQVDx4GgxUniF5s3UHFw9xQyOaY2mbqftD1hzzdk5lt2jWzbRp8PxD6vE+S5k2+eZ73RxIPAAgteRHAAIATAAo+Sc2SBzAO4KauNo94WLxhAF4Ha9wLYE7eMyXhB9AF4AqAyyRgAsBJhyt1WFebPzpcB1chtOQQgDYvp02J+3hE2nllm+daUqSdk+2epAxIAV2OFNDlSAFdjhTQ5ZRVwINNXgT31P2P19ExfHYP3Nnqx/tUFvrP3Dr/wOlGdLfXF+znn1cwt5jH/bfLmDCyZT03oRkBAIGNfl1VprbaT1eVVFkrUwPYjsBzh/x4cmk3zgv/mi+0z7cmHnHmgB/hVj9EU0UyNM1AjPISN20WthhxoRlBoRldQjP6wKIKzRitRCWrhe0IHP+awfX2ejy8sAvxuQyGP6XRsnOzUI8n0xibXin7aeiq0onVi99D946uKr1cpvnBqMVOUFQKzQjxroP8S+WQ0IwYgDCAgqi6qkRJYPalqGw5Dtlh01dL2A6RhjoPFjP5gt3R4sOtU424caxh03bTC7k/7F1ReszIAnCPyhabhOnj1Bvi3zD7AyxikKM5xP/1gH0PLP6aw7aAk/PZgohb8fpLptrnGuPICvE0U5jTapDXgf1Rjs5BjsoU2yRwhH39LLCZlvt1Vemv9gmVgm0BX85mEHm3jFz+79t8mM86IWCEoyTMIgX4sUuixM5LkKN2lNtZK0U7SE6yrV7Gi9kMskUEvP1qqajAlYBFmjJF42WtXSwB2j6iq0obLbUsmpVtCfhsegXdsR/4nt6s0t34UmG9Q8Q4khJmSrWkTxMS2uyJkm32RCPsH+JygtfXNLZ6oV4P0HWkHteO7sDxvb51z6GobbwTX8JTvTri6aoS2Th0oLZMaEaEo5HWRy3ps8OMUqEZCW77UkIz2nhfsjs5BU/pqkLbUC+0basxppPQE3nbyY5mXGjst7/Rg+RyHhPzWbz59k8DdvlE3iZCS54FMGZ7HEjMLOQws5B2sv4SRk5muxwpoMuRArocKaDL8fKbvhL3QUOovJdf05a4j6ukXa28Wk+VmZU3UUkE+HqtvloP+XGL2/j9cYvaPPIL4ac993MHNiIAAAAASUVORK5CYII=" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="about-buttons__box-btn">
+                  <a href="!#" class="about-buttons__box-down">
+                    <svg class="btn-top-bottom" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="10" viewBox="0 0 16 10">
+                      <image id="arrow-down-sign-to-navigate_1_копия_5"
+                        data-name="arrow-down-sign-to-navigate (1) копия 5" width="16" height="10"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAbUlEQVQokZXMwQmDQBBA0RcEu0hJFmAN3tOHh2AfKcOWRDYIczCBXcc57TLzfocRA1bsctPjhedxvaHgE4ur6eO2hDXHJxM54xLWA0si8o+XsDKRJr6KpHArksa1yC1ci1Rxq3jspni/I/Q7+AKHeDO72cz8GQAAAABJRU5ErkJggg==">
+                      </image>
+                    </svg>
+                  </a>
+                  <p class="about-buttons__box-info">34</p>
+                  <a href="!#" class="about-buttons__box-up">
+                    <svg class="btn-top-bottom" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="10" viewBox="0 0 16 10">
+                      <image id="arrow-down-sign-to-navigate_1_копия_5"
+                        data-name="arrow-down-sign-to-navigate (1) копия 5" width="16" height="10"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAbElEQVQokWNkwA1ActlQ2akMDAz/8ajFACDN06Ga/kPZ+CxDAeiaSTIEXfMmKCbKEGya2aCYoCG4NMMAXkMIaSZoyEQiNOMyBKSX4TeRmrEZ8hvkhEgGBgYFBgaGXgYGhl9EGAAzpJiBgeEBAFwpNAyhFXMTAAAAAElFTkSuQmCC">
+                      </image>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+
+                  <div class="bunner-right col-md-4">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sales col-lg-9" style="background-image: url('img/sales-bg.jpg');">
+              <div class="sales-wrapper">
+                <img src="img/product-one.jpg" alt="">
+                <div class="sales-info">
+                  <h4 class="sales-info__title">
+                    Товар месяца!
+                  </h4>
+                  <p class="sales-info__name">
+                    Націократія
+                  </p>
+                  <p class="sales-info__detail">Книга, яку називають біблією українського націоналізму</p>
+                  <p class="sales-info__format">электронная книга</p>
+                </div>
+
+                <div class="sales-info__buyers">
+                  <p class="sales-info__buyers-price">180 ₴</p>
+                  <a href="#!" class="book-review__details-buy">КУПИТИ</a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="add-comment">
+              <h3 class="add-comment__title">15 коментарів</h3>
+              <form action="" class="add-comment__form">
+                <textarea class="add-comment__form-text" name="comment" id="comment" style="resize: none;"
+                  placeholder="Залилиши коментарій..."></textarea>
+              </form>
+            </div>
+          </div>
+
+          <div class="delivery">
+            <p class="delivery-info">
+              Доставка замовлень по Україні здійснюється за допомогою сервісу <span class="text--bold">"Нова Почта"
+              </span>
+              по тарифам перевізника. Доставка можлива як у відділення, так і за вашою адресою.
+            </p>
+            <p class="delivery-info">
+              <span class="text--bold"> Термін </span> доставки по Україні становить <span class="text--bold">1-3
+                дні</span> з моменту відправки, в залежності
+              від віддаленості населеного пункту.
+            </p>
+
+            <p class="delivery-info">
+              Відправка замовлень оформлених <span class="text--bold">до 18:00</span> здійснюється в день замовлення.
+            </p>
+
+
+            <p class="delivery-info">
+              <span class="text--bold">Вартість доставки: <br> </span>
+              Доставка до відділення - від 40 грн, безкоштовна від 999 грн.
+              Доставка кур'єром - від 69 грн, безкоштовна в,ід 999 грн.
+            </p>
+
+            <p class="delivery-info">
+              <span class="text--bold">Оплата замовлення: <br></span>
+              Накладний платіж <br>
+              Карткою Visa або Mastercard на сайті <br>
+              Через платіжну систему Приват24
+            </p>
+          </div>
+
+          <div class="payment">
+            <p class="payment-title">Дякуємо!</p>
+            <p class="payment-text">Ваше замовлення оформлено.</p>
+
+            <div class="payment-box">
+              <h4 class="payment-box__title">Оплатити онлайн</h4>
+              <div class="payment-box__wrapper">
+                <a href="#!">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158"
+                    height="50" viewBox="0 0 158 50">
+                    <image id="_486daea6ba339172b7fde66786c3ee870d866ede"
+                      data-name="486daea6ba339172b7fde66786c3ee870d866ede" width="158" height="50"
+                      xlink:href="data:img/png;base64,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" />
+                  </svg>
+                </a>
+                <a href="#!"><img src="img/visa.jpg" alt=""></a>
+              </div>
+            </div>
+            <p class="payment-info">
+              Ми опрацюємо ваше замовлення найближчим часом і підтвердимо його за допомогою дзвінка або повідомлення.
+              Наш відділ турботи про клієнтів працює щодня з 9.00 до 21.00.
+            </p>
+          </div>
+
+          <div class="basket">
+            <div class="basket-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260"
+                height="260" viewBox="0 0 260 260">
+                <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="260" height="260"
+                  xlink:href="data:img/png;base64,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" />
+              </svg>
+              <div class="basket-inner">
+                <h4 class="basket-inner__title">СРАКА!</h4>
+                <p class="basket-inner__text">
+                  Ви ще нічого сюди не додали. <br>
+                  Знайдіть <span>ЩОСЬ КРУТЕ</span> <br>
+                  в нашому каталозі <br>
+                  на свій смак.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PART COMPLATE START  -->
+          <div class="complate">
+            <p class="complate-text">Кошик</p>
+            <div class="complate-wrapper">
+              <div class="complate-items line">
+                <p class="complate-items__list">список покупок</p>
+                <div class="complate-inner">
+                  <p class="complate-items__list">кол-во</p>
+                  <p class="complate-items__list">цена</p>
+                  <p class="complate-items__list">сумма</p>
+                </div>
+              </div>
+
+              <div class="complate-product line">
+                <div class="complate-product__wrapper">
+                  <img src="img/svg/book-prod.jpg" alt="">
+                  <div class="complate-box">
+                    <a href="#!" class="complate-box__title">Микола Гоголь</a><br>
+                    <a href="#!" class="complate-box__genre">Комікси</a>
+                    <p class="complate-box__info">тип: <span>электронные</span></p>
+                  </div>
+                </div>
+                <div class="complate-inner">
+                  <div class="complate-box__number">
+                    <a class="complate-box__number-sign">-</a>
+                    <p class="complate-box__number-info">1</p>
+                    <a class="complate-box__number-sign">+</a>
+                  </div>
+                  <p class="complate-box__number-price">400 ₴</p>
+                  <p class="complate-box__number-summ">400 ₴</p>
+                  <a href="#!" class="complate-box__product-delete">
+                    <svg class="delete-btn" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="20" viewBox="0 0 16 20">
+                      <image id="delete" width="16" height="20"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAABLklEQVQ4jaWUPS9EURCGn71sJ9yEf+A/UOoUopBIJNhEfxO1TrFR6nRaCp1eKyKh4RcQHWu56yORkJAj78g4OZd1vc3MmTPznDlzPxpFUZDQDtCKwnvAYpw6mKoGRoE14ETrCWA2lWiAoQi2FOWdAdtA7mJvwFMoWgZ2Kzr5TSsZsFCzOKgVOtgE9msCLgLgEDgHVoFmn4WvwBbwYIMbBzb+ePoBcJpp0ZHtAmM6IagNrMt/117H1xjgVrYpSKn1PfAov6e9gRTgBXgGhoGGkmNZLHf5X4CgG9kR14FXqRcucx1/A1gwrwD0BA+6rgMoHSDZgU23nw66KYDNIP9hiP+6ggckr2BtVT2FJMD/A6ytaeBO/pS++6DJ+CWKAcfAJTDjYnPOn5e9Ao4+PeADFyVLtrXKPWUAAAAASUVORK5CYII=" />
+                    </svg>
+                  </a>
+                </div>
+
+              </div>
+
+
+              <div class="complate-product line">
+                <div class="complate-product__wrapper">
+                  <img src="img/svg/book-prod.jpg" alt="">
+                  <div class="complate-box">
+                    <a href="#!" class="complate-box__title">Микола Гоголь</a><br>
+                    <a href="#!" class="complate-box__genre">Комікси</a>
+                    <p class="complate-box__info">тип: <span>электронные</span></p>
+                  </div>
+                </div>
+                <div class="complate-inner">
+                  <div class="complate-box__number">
+                    <a class="complate-box__number-sign">-</a>
+                    <p class="complate-box__number-info">1</p>
+                    <a class="complate-box__number-sign">+</a>
+                  </div>
+                  <p class="complate-box__number-price">400 ₴</p>
+                  <p class="complate-box__number-summ">400 ₴</p>
+                  <a href="#!" class="complate-box__product-delete">
+                    <svg class="delete-btn" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="20" viewBox="0 0 16 20">
+                      <image id="delete" width="16" height="20"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAABLklEQVQ4jaWUPS9EURCGn71sJ9yEf+A/UOoUopBIJNhEfxO1TrFR6nRaCp1eKyKh4RcQHWu56yORkJAj78g4OZd1vc3MmTPznDlzPxpFUZDQDtCKwnvAYpw6mKoGRoE14ETrCWA2lWiAoQi2FOWdAdtA7mJvwFMoWgZ2Kzr5TSsZsFCzOKgVOtgE9msCLgLgEDgHVoFmn4WvwBbwYIMbBzb+ePoBcJpp0ZHtAmM6IagNrMt/117H1xjgVrYpSKn1PfAov6e9gRTgBXgGhoGGkmNZLHf5X4CgG9kR14FXqRcucx1/A1gwrwD0BA+6rgMoHSDZgU23nw66KYDNIP9hiP+6ggckr2BtVT2FJMD/A6ytaeBO/pS++6DJ+CWKAcfAJTDjYnPOn5e9Ao4+PeADFyVLtrXKPWUAAAAASUVORK5CYII=" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="complate-product__about">
+                <div class="complate-product__about-wrapper">
+                  <p class="complate-product__about-title">
+                    кол-во товара: <br>
+                    стоимость заказа:
+                  </p>
+                  <div class="complate-product__price-wrapper">
+                    <p class="complate-product__about-product">26</p>
+                    <p class="complate-product__about-price">18 400 ₴</p>
+                  </div>
+                </div>
+                <a class="complate-product__about-text">Оберіть спосіб оплати <br>
+                  та доставки</a>
+              </div>
+            </div>
+          </div>
+          <!-- PART COMPLATE END  -->
+
+          <!-- PART FEEDBACK START  -->
+          <div class="feedback">
+            <div class="feedback-form">
+              <h4 class="feedback-form__title">Реєстрація</h4>
+              <form class="feedback-form__action" action="#!">
+                <label class="label-bottom" for="#!">
+                  <p class="label-email" for="#!">
+                    Email
+                  </p>
+                  <input type="text" class="feedback-form__action-email input-focus" placeholder="Email" required>
+                  <p class="input-required">* такої електронної пошти не існує</p>
+                </label>
+                <label class="label-bottom" for="#!">
+                  <p class="label-email" for="#!">
+                    Email
+                  </p>
+                  <input type="text" class="feedback-form__action-email input-focus" placeholder="Email" required>
+                  <p class="input-required">* такої електронної пошти не існує</p>
+                </label>
+                <label class="label-bottom" for="#!">
+                  <input type="text" class="feedback-form__action-email input-focus" placeholder="Email" required>
+                  <p class="input-required">* такої електронної пошти не існує</p>
+                </label>
+                <button class="feedback-form__btn" type="submit">ВІДПРАВИТИ</button>
+              </form>
+              <div class="feedback-form__box">
+                <a href="#!" class="feedback-form__box-account">Забули пароль?</a>
+                <a href="#!" class="feedback-form__box-account">Реєстрація</a>
+              </div>
+            </div>
+
+            <div class="feedback-delivery">
+              <h4 class="feedback-delivery__title">
+                Доставка
+              </h4>
+              <form class="feedback-delivery__action" action="#!">
+
+                <label class="feedback-delivery__input" for="#!">
+                  <p class="feedback-delivery__input-title" for="#!">
+                    Місто
+                  </p>
+                  <input type="text" class="feedback-form__action-email feedback-delivery__input-place input-focus"
+                    placeholder="Email" required>
+                  <p class="input-required">* такої електронної пошти не існує</p>
+                </label>
+
+                <label class="radio-group">
+                  <input type="radio" class="radio">
+                  <span class="radio-style"></span>
+                  Доставка кур’єром
+                </label>
+
+                <label class="radio-group">
+                  <input type="radio" class="radio">
+                  <span class="radio-style"></span>
+                  Доставка на відділення «Нова Пошта»
+                </label>
+
+                <label class="select-group">
+                  <select
+                    class="feedback-form__action-email feedback-delivery__input-place form-select form-select-lg mb-3 "
+                    aria-label=".form-select-lg example">
+                    <option class="form-select-var" selected>Open this select menu</option>
+                    <option class="form-select-var" value="1">One</option>
+                    <option class="form-select-var" value="2">Two</option>
+                    <option class="form-select-var" value="3">Three</option>
+                  </select>
+                </label>
+
+                <label class="feedback-delivery__input" for="#!">
+                  <p class="feedback-delivery__input-title">Додати коментар до замовлення</p>
+                  <textarea class="feedback-delivery__input-comment input-focus" name="comment" id="comment"
+                    style="resize: none;"></textarea>
+
+                </label>
+
+                <div class="feedback-delivery__adress">
+                  <label class="label-bottom adress-place--size">
+                    <p class="feedback-delivery__input-title" for="#!">
+                      Вулиця
+                    </p>
+                    <input type="text" class="feedback-delivery__adress-place input-focus adress-place--size"
+                    placeholder="Email" required>
+                  </label>
+
+                  <label class="label-bottom">
+                    <p class="feedback-delivery__input-title" for="#!">
+                      Будинок
+                    </p>
+                    <input type="text" class="feedback-delivery__adress-place input-focus adress-place--last-size"
+                    placeholder="Email" required>
+                  </label>
+
+                  <label class="label-bottom">
+                    <p class="feedback-delivery__input-title" for="#!">
+                      Кваритра
+                    </p>
+                    <input type="text" class="feedback-delivery__adress-place adress-place--last-size input-focus"
+                    placeholder="Email" required>
+                  </label>
+                </div>
+                <button class="feedback-delivery__adress-btn" type="submit" >ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+              </form>
+            </div>
+          </div>
+          <!-- PART FEEDBACK END  -->
+
+          <!-- PART SUBSCRIBE START  -->
+          <div class="subscribe">
+            <div class="subscribe-info">
+              <h4 class="subscribe-info__title">ПОДПИСКА</h4>
+              <p class="subscribe-info__text">ПЛАТИ РАЗ, СМОТРИ ВСЕГДА!</p>
+              <p class="subscribe-info__text subscribe-info__bottom">только до 10 октября </p>
+              <a href="#!" class="subscribe-info__more">узнать больше</a>
+            </div>
+            <img class="subscribe-info__books" src="img/subscribe-books.png" alt="">
+          </div>
+
+          <!-- PART SUBSCRIBE END  -->
+
+          <!-- PART FOOTER START  -->
+
+          <!-- PART FOOTER END  -->
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+            <!-- PART FOOTER START  -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <a href="tel:+380993752381" class="footer-box__contact">+38 (099) 375-23-81</a>
+        <p class="footer-box__text">Телефон для ДОВІДОК</p>
+      </div>
+  
+      <div class="footer-box">
+      <a href="#!" class="footer-box__right">Договір публічної оферти</a> <br>
+      <a href="#!" class="footer-box__right">Політика конфіденційності</a>
+      </div>
+  
+      <div class="footer-logos">
+        <img class="footer-logos__visa" src="img/visa.jpg" alt="">
+        <svg class="footer-logos__pay" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="26" viewBox="0 0 124 26">
+          <image id="_1280px-LIQPAY.svg" data-name="1280px-LIQPAY.svg" width="124" height="26" xlink:href="data:img/png;base64,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"/>
+        </svg>
+      </div>
+    </div> 
+  </footer>
+          <!-- PART FOOTER END  -->
+
+  <!-- <section class="product-book">
+    <div class="container-lg">
+      <div class="col-lg-9">
+        <p class="product-book__text">Друкованi</p>
+        <a href="#!" class="product-book__more">більше</a>
+      </div>
+    </div>
+  </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- layout form with check-box end  -->
+  <!-- <form action="#!" class="form">
+
+        <label class="radio-group">
+            <input type="radio" class="radio">
+            <span class="radio-style"></span>
+            один
+        </label>
+
+        <label class="radio-group">
+            <input type="radio" class="radio">
+            <span class="radio-style"></span>
+            один
+        </label>
+
+        <label class="radio-group">
+            <input type="radio" class="radio">
+            <span class="radio-style"></span>
+            один
+        </label>
+        
+        <label class="radio-group">
+            <input type="radio" class="radio">
+            <span class="radio-style"></span>
+            один
+        </label>
+
+
+
+    </form> -->
+  <!-- layout form with check-box end  -->
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

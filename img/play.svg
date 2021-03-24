@@ -1,0 +1,16 @@
+<svg id="Группа_31" data-name="Группа 31" xmlns="http://www.w3.org/2000/svg" width="91" height="91" viewBox="0 0 91 91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #e21b1b;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Эллипс_2" data-name="Эллипс 2" class="cls-1" cx="45.5" cy="45.5" r="45.5"/>
+  <path id="Многоугольник_2" data-name="Многоугольник 2" class="cls-2" d="M1336,3517l-42.75,24.68v-49.36Z" transform="translate(-1263 -3471)"/>
+</svg>
