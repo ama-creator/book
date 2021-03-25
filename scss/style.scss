@@ -256,7 +256,7 @@
     font-family: $roboto;
     font-weight: 300;
     font-size: 23px;
-    margin-bottom: 28px;
+    // margin-bottom: 28px;
     color: #4d4d4d;
 }
 
@@ -273,7 +273,7 @@
 .content-product__info-text{
     font-family: $roboto;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 23px;
     color: #000;
     margin-bottom: 17px;
 }
@@ -847,7 +847,7 @@
 }  
 
 .discount-box__sign {
-    margin: 80px 20px;
+    margin: 80px 70px;
 }
 
 .discount-inner__price {
@@ -871,7 +871,7 @@
         height: 3px;
         background-color: #9e0b0f;
         left: 23px;
-        top: 27px;
+        top: 24px;
     }
   }
 
@@ -887,7 +887,7 @@
     color: rgb(255, 255, 255);  
     align-self: center;
     margin-top: -90px;
-    margin-left: 20px;
+    margin-left: 70px;
     position: relative;
     &:hover{
         background-color: transparent;
@@ -2120,5 +2120,88 @@ background-color: blue
 }
 
 // SECTION CONTENT END 
+
+// STYLES FOR SLICK SLIDER START 
+.slick-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.content-product__slider-text{
+    position: relative;
+    z-index: 5;
+}
+
+.slick-btn{
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+} 
+.slick-btn img{
+    width: 8px;
+    height: 19px;
+}
+
+.slick-prev{
+    left: 10px;
+}
+
+.slick-next{
+    right: 457px;
+}
+
+.slick-dots{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.slick-active button{
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    font-size: 0;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border: 3px solid #000;
+        background-color: transparent;
+        border-radius: 50%;
+        top: -5px;
+        left: -5px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: #fff !important;
+    }
+}
+
+
+li[role=presentation] button{
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    font-size: 0;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+    }
+}
+
+// STYLES FOR SLICK SLIDER END
+
+
 
 @import "media";
